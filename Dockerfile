@@ -15,4 +15,3 @@ VOLUME /usr/src/app/node_modules
 EXPOSE 3000 3001
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
-#ENTRYPOINT ["gulp"]
