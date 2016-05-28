@@ -11,7 +11,7 @@ Google's [Web Starter Kit](http://developers.google.com/web/starter-kit) Docker-
 
 ```shell
 $ mkdir myproject && cd myproject
-docker run --rm -v -p 3000:3000 -p 3001:3001 "$(pwd)":/usr/src/app" blackxored/google-web-starter-kit
+$ docker run --rm -v -p 3000:3000 -p 3001:3001 "$(pwd)":/usr/src/app" blackxored/google-web-starter-kit
 ```
 
 This will also start the included HTTP server.
@@ -19,7 +19,7 @@ This will also start the included HTTP server.
 ### Running the server
 
 ```shell
-docker run --rm -v -p 3000:3000 -p 3001:3001 "$(pwd)":/usr/src/app blackxored/google-web-starter-kit
+$ docker run --rm -v -p 3000:3000 -p 3001:3001 "$(pwd)":/usr/src/app blackxored/google-web-starter-kit
 ```
 
 ### Running WSK commands
@@ -32,11 +32,11 @@ since we've switched the default.
 Examples:
 
 ```shell
-docker run --rm -v "$(pwd)":/usr/src/app blackxored/google-web-starter-kit build
+$ docker run --rm -v "$(pwd)":/usr/src/app blackxored/google-web-starter-kit build
 ```
 
 ```shell
-docker run --rm -p 3000:3000 -p 3001:3001 "$(pwd)":/usr/src/app blackxored-google-web-starter-kit serve:dist
+$ docker run --rm -p 3000:3000 -p 3001:3001 "$(pwd)":/usr/src/app blackxored-google-web-starter-kit serve:dist
 ```
 
 ## License
